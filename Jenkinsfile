@@ -2,14 +2,13 @@ pipeline {
   agent {
     docker {
       image 'nginx'
-      args '-d'
     }
     
   }
   stages {
     stage('modify content') {
       steps {
-        sh 'pwd'
+        sh 'docker run -d -p 9090:80 -v /tmp:/tmp nginx'
       }
     }
   }
