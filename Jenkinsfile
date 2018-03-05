@@ -8,7 +8,8 @@ pipeline {
   stages {
     stage('modify content') {
       steps {
-        sh 'touch /tmp/111'
+        sh '''echo `date` >> /tmp/222
+'''
       }
     }
   }
