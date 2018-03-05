@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('modify content') {
       steps {
-        sh 'echo 123 > /tmp/123'
+        sh 'touch /tmp/111'
       }
     }
   }
