@@ -1,15 +1,15 @@
 pipeline {
   agent {
-    docker {
-      image 'nginx'
-      args '-p 9090:80 -v /tmp/tmp'
+    node {
+      label 'node0'
     }
     
   }
   stages {
     stage('modify content') {
       steps {
-        sh 'pwd'
+        sh '''echo `date` >> /tmp/222
+'''
       }
     }
   }
