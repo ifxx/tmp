@@ -22,7 +22,7 @@ def run_jenkins_job(jobname):
 # 扫码登陆
 bot = Bot(console_qr=True, cache_path=True)
 # 初始化图灵机器人 (API key 申请: http://tuling123.com)
-tuling = Tuling(api_key='f08398f918254e1c9b366e41b0228a52')
+tuling = Tuling(api_key='aaaaaaaaaadddddddddddddddddddddkkkkkkkkkkkk')
 # 自动回复所有文字消息
 #gp=bot.groups().search('Roche vip')[0]
 gp=ensure_one(bot.groups().search('Roche vip'))
